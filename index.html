@@ -1,60 +1,197 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Ander Radio</title>
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link href="https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&amp;display=swap" rel="stylesheet" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-    </head>
-    <body>
-        <!-- Background Video-->
-        <video class="bg-video" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop"><source src="assets/mp4/bg.mp4" type="video/mp4" /></video>
-        <!-- Masthead-->
-        <div class="masthead">
-            <div class="masthead-content text-white">
-                <div class="container-fluid px-4 px-lg-0">
-                    <h1 class="fst-italic lh-1 mb-4">Ander Radio muy pronto</h1>
-                    <p class="mb-5">Estamos trabajando duro para terminar el desarrollo de este sitio.</p>
-                    <!-- * * * * * * * * * * * * * * *-->
-                    <!-- * * SB Forms Contact Form * *-->
-                    <!-- * * * * * * * * * * * * * * *-->
-                    <!-- This form is pre-integrated with SB Forms.-->
-                    <!-- To make this form functional, sign up at-->
-                    <!-- https://startbootstrap.com/solution/contact-forms-->
-                    <!-- to get an API token!-->
-          
-                </div>
-            </div>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Ander Radio - Una radio en Nuestro Mundo</title>
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="./favicon.png" />
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/fontAwesome.css">
+    <link rel="stylesheet" href="css/light-box.css">
+    <link rel="stylesheet" href="css/owl-carousel.css">
+    <link rel="stylesheet" href="css/templatemo-style.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+
+    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+</head>
+
+<body>
+
+    <audio id="radioStream" style="display: none;" src="https://stream.zeno.fm/sk34a2c0av8uv" preload="auto" autoplay controls=""></audio>
+
+    <!-- ...............................MENU MOBILE .......................................................
+
+    <header class="nav-down responsive-nav hidden-lg hidden-md">
+        <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <div id="main-nav" class="collapse navbar-collapse">
+            <nav>
+                <ul class="nav navbar-nav">
+                    <li><a href="#top">Home</a></li>
+                    <li><a href="#featured">Featured</a></li>
+                    <li><a href="#projects">Recent Projects</a></li>
+                    <li><a href="#video">Presentation</a></li>
+                    <li><a href="#blog">Blog Entries</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a href="#contact">Mobile menu</a></li>
+                </ul>
+            </nav>
         </div>
-        
-        <!-- Social Icons-->
-        <!-- For more icon options, visit https://fontawesome.com/icons?d=gallery&p=2&s=brands-->
-        <div class="social-icons">
-            <div class="d-flex flex-row flex-lg-column justify-content-center align-items-center h-100 mt-3 mt-lg-0">
-                <a class="btn btn-dark m-3" href="https://api.whatsapp.com/send?phone=59893595418&text=Ander%20Radio"><i class="fab fa-whatsapp"></i></a>
-                <a class="btn btn-dark m-3" href="https://open.spotify.com/playlist/5L0j2R8qFEtaEbCxhognBY?si=ftoLUiSKRkOTegq2GJAE5A&nd=1"><i class="fab fa-spotify"></i></a>
-                <a class="btn btn-dark m-3" href="https://www.facebook.com/ander.radios.5"><i class="fab fa-facebook-f"></i></a>
-                <a class="btn btn-dark m-3" href="https://web.archive.org/web/20211206131331/https://www.instagram.com/anderradio/"><i class="fab fa-instagram"></i></a>
-            </div>
+    </header>
+    ...............................MENU MOBILE .......................................................-->
+
+
+    <!-- ...............................MENU LATERAL .......................................................-->
+    <div class="sidebar-navigation hidde-sm hidden-xs hidden" id="menuLateral">
+        <div class="logo">
+            <a href="#">Ander<em> Radio</em></a>
         </div>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <!-- * *                               SB Forms JS                               * *-->
-        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-    </body>
+        <nav class="menuLateral">
+            <div class="contenedorNoticias">
+                <h3>Noticias</h3>
+            </div>
+        </nav>
+        <!--<ul class="social-icons">
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="#"><i class="fa fa-rss"></i></a></li>
+            <li><a href="#"><i class="fa fa-behance"></i></a></li>
+        </ul>-->
+    </div>
+   <!-- <div class="boton-desplegar-menu contraer hidden" id="btnContraerMenu">
+        <i class="fa fa-chevron-left"></i>
+    </div>
+    <div class="boton-desplegar-menu desplegar" id="btnDesplegarMenu">
+        <i class="fa fa-chevron-right"></i>
+    </div>-->
+    <!-- ...............................MENU LATERAL .......................................................-->
+
+
+    <div class="upperBanner">
+        <div class="nombreRadio">
+            Ander Radio
+        </div>
+    </div>
+
+
+    <!-- ............................... COMANDOS RADIO .......................................................-->
+    <div id="controlVolumen" class="controlesVolumenContainer">
+        <div id="subirVolumen">
+            <i class="fa fa-volume-up" style="font-size: 2.5em!important;"></i>
+        </div>
+        <div id="bajarVolumen">
+            <i class="fa fa-volume-down fa-rotate-180"></i>
+        </div>
+        <div id="">
+            <a href="https://mpago.la/2T2T6Tq"><i class="fa fa-heart donation" aria-hidden="true"></i></a>
+        </div>
+    </div>
+    <div class="comandosRadio" id="btnReproducir">
+        <i id="btnPlay" class="fa fa-play"></i>
+        <i id="btnPause" class="fa fa-pause hidden"></i>
+    </div>
+    <!-- ............................... COMANDOS RADIO .......................................................-->
+
+    <!-- ............................... GALERIA IMAGENES .......................................................-->
+    <div class="slider">
+        <div class="Modern-Slider content-section" id="top">
+
+        </div>
+    </div>
+    <!-- ............................... GALERIA IMAGENES .......................................................-->
+
+
+    <!-- ............................... REDES SOCIALES .......................................................-->
+    <a href="https://youtube.com/@anderradio?si=lQyLFXieySCj1mOW" class="float youtube" target="_blank" rel="noopener noreferrer">
+        <i class="fa fa-youtube my-float"></i>
+    </a>
+    <a href="https://open.spotify.com/show/5OLZbPaUpH5Ui851ojmsMJ?si=adc6d1ae524e4315" class="float spotify" target="_blank" rel="noopener noreferrer">
+        <i class="fa fa-spotify my-float"></i>
+    </a>
+    <a href="https://www.facebook.com/ander.radios.5" class="float facebook" target="_blank" rel="noopener noreferrer">
+        <i class="fa fa-facebook-f my-float"></i>
+    </a>
+    <a href="https://www.instagram.com/anderradio/" class="float instagram" target="_blank" rel="noopener noreferrer">
+        <i class="fa fa-instagram my-float"></i>
+    </a>
+    <!-- <a href="https://api.whatsapp.com/send?phone=59893595418&text=Ander%20Radio" class="float whatsapp" target="_blank"
+        rel="noopener noreferrer">
+        <i class="fa fa-whatsapp my-float"></i>
+    </a>-->
+    <!-- ............................... REDES SOCIALES .......................................................-->
+
+
+    <!-- ............................... CHAT .......................................................-->
+    <div class="arena-chat" data-publisher="ander-radio" data-chatroom="ander-radio-global" data-position="bottom">
+
+    </div>
+    <script async src="https://go.arena.im/public/js/arenachatlib.js?p=ander-radio&e=ander-radio-global"></script>
+    <!-- ............................... CHAT .......................................................-->
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+    <script src="js/vendor/bootstrap.min.js"></script>
+
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+        // Hide Header on on scroll down
+        var didScroll;
+        var lastScrollTop = 0;
+        var delta = 5;
+        var navbarHeight = $('header').outerHeight();
+
+        $(window).scroll(function (event) {
+            didScroll = true;
+        });
+
+        setInterval(function () {
+            if (didScroll) {
+                hasScrolled();
+                didScroll = false;
+            }
+        }, 250);
+
+        function hasScrolled() {
+            var st = $(this).scrollTop();
+
+            // Make sure they scroll more than delta
+            if (Math.abs(lastScrollTop - st) <= delta)
+                return;
+
+            // If they scrolled down and are past the navbar, add class .nav-up.
+            // This is necessary so you never see what is "behind" the navbar.
+            if (st > lastScrollTop && st > navbarHeight) {
+                // Scroll Down
+                $('header').removeClass('nav-down').addClass('nav-up');
+            } else {
+                // Scroll Up
+                if (st + $(window).height() < $(document).height()) {
+                    $('header').removeClass('nav-up').addClass('nav-down');
+                }
+            }
+
+            lastScrollTop = st;
+        }
+    </script>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+</body>
+
 </html>
