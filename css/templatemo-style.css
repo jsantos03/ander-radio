@@ -1071,7 +1071,7 @@ header {
 .controlesVolumenContainer{
   position: absolute;
   z-index: 999;
-  right: 0;
+  right: 10px;
   margin-top: 42px;
 }
 
@@ -1146,19 +1146,19 @@ header {
 
 
 .float.spotify{
-  bottom: 200px;
+  bottom: 210px;
 }
 
 .float.tiktok{
-  bottom: 340px;
+  bottom: 350px;
 }
 
 .float.youtube{
-  bottom: 270px;
+  bottom: 280px;
 }
 
 .float.facebook{
-  bottom: 130px;
+  bottom: 140px;
 }
 
 .donation{
@@ -1173,7 +1173,7 @@ header {
   .comandosRadio{
     position: absolute;
     z-index: 999;
-    margin-left: 41%;
+    margin-left: 33%;
     margin-top: 40vh;
   }
 
