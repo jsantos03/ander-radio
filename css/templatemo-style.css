@@ -1118,7 +1118,7 @@ header {
   width: 60px;
   height: 60px;
   bottom: 100px;
-  left: 25px;
+  right: 25px;
   background-color: #fff;
   color: #000!important;
   border-radius: 50px;
@@ -1136,7 +1136,7 @@ header {
 }
 
 .float.instagram{
-  bottom: 50px;
+  bottom: 60px;
 }
 
 /*.spotify{
@@ -1144,16 +1144,21 @@ header {
   background-size: cover;
 }*/
 
+
 .float.spotify{
-  bottom: 190px;
+  bottom: 200px;
+}
+
+.float.tiktok{
+  bottom: 340px;
 }
 
 .float.youtube{
-  bottom: 260px;
+  bottom: 270px;
 }
 
 .float.facebook{
-  bottom: 120px;
+  bottom: 130px;
 }
 
 .donation{
