@@ -8,8 +8,8 @@ jQuery(document).ready(function ($) {
 
     $(".Modern-Slider").slick({
         autoplay: true,
-        autoplaySpeed: 6000, // Duración en milisegundos (6 segundos) que cada imagen se muestra
-        speed: 3000, // Duración de la transición en milisegundos (1 segundo)
+        autoplaySpeed: 8000, // Duración en milisegundos (6 segundos) que cada imagen se muestra
+        speed: 4000, // Duración de la transición en milisegundos (1 segundo)
         slidesToShow: 1,
         slidesToScroll: 1,
         pauseOnHover: false,
