@@ -1,6 +1,6 @@
 jQuery(document).ready(function ($) {
 
-    var cantidadImagenes = 8;
+    var cantidadImagenes = 9;
     cargarImagenesFondo();
 
     'use strict';
@@ -8,7 +8,8 @@ jQuery(document).ready(function ($) {
 
     $(".Modern-Slider").slick({
         autoplay: true,
-        speed: 5000,
+        autoplaySpeed: 6000, // Duración en milisegundos (6 segundos) que cada imagen se muestra
+        speed: 3000, // Duración de la transición en milisegundos (1 segundo)
         slidesToShow: 1,
         slidesToScroll: 1,
         pauseOnHover: false,
@@ -111,6 +112,11 @@ jQuery(document).ready(function ($) {
     });
 
     function cargarImagenesFondo() {
+        const isMobile = window.innerWidth <= 768;
+        
+        if (isMobile)
+            cantidadImagenes = 7;
+
 
         for (var i = 1; i <= cantidadImagenes; i++) {
 
@@ -123,7 +129,10 @@ jQuery(document).ready(function ($) {
 
             var imagen = document.createElement("div");
             imagen.className = "image";
-            imagen.style = "background-image: url(./img/fondos/" + i + ".jpg)";
+            if (isMobile)
+                imagen.style = "background-image: url(./img/fondos/mobile/" + i + ".jpg)";
+            else
+                imagen.style = "background-image: url(./img/fondos/" + i + ".jpg)";
 
             imagenFill.appendChild(imagen);
             item.appendChild(imagenFill);
