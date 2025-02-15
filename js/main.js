@@ -1,6 +1,6 @@
 jQuery(document).ready(function ($) {
 
-    var cantidadImagenes = 9;
+    var cantidadImagenes = 10;
     cargarImagenesFondo();
 
     'use strict';
@@ -115,7 +115,7 @@ jQuery(document).ready(function ($) {
         const isMobile = window.innerWidth <= 768;
         
         if (isMobile)
-            cantidadImagenes = 7;
+            cantidadImagenes = 8;
 
 
         for (var i = 1; i <= cantidadImagenes; i++) {
