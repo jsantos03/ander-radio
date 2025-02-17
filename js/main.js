@@ -1,6 +1,6 @@
 jQuery(document).ready(function ($) {
 
-    var cantidadImagenes = 10;
+    var cantidadImagenes = 9;
     cargarImagenesFondo();
 
     'use strict';
